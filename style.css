@@ -1,0 +1,206 @@
+
+@page {
+    size: A4 portrait;
+}
+
+page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    position: relative;
+}
+
+page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+}
+
+@page {
+    size: 21cm 29.7cm;
+    margin: 0mm;
+}
+
+body {
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0 auto;
+    background: #ddd;
+    color: #222;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+/* === LEFT panel stylling === */
+.leftPanel {
+    width: 28%;
+    padding: 0.5cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leftPanel-themed {
+    background-color: #888;
+    color: white;
+    border-right: 0.05cm double #011
+
+}
+
+.leftPanel img {
+    width: 5.5cm;
+    height: 5.5cm;
+    margin-bottom: 1%;
+    margin-top: 0.5cm;
+    object-fit: cover;
+    border-radius: 35%;
+    border: 0.15cm solid white;
+    filter: grayscale(50%);
+}
+
+.panelbox {
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.panelbox i {
+    padding: 0.03cm;
+    width: 0.5cm;
+    text-align: center;
+}
+
+.panelbox {
+    margin-left: 0.1cm;
+}
+
+
+/* === RIGHT panel stylling === */
+.rightPanel {
+    width: 65%;
+    margin-left: 0.5cm;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.rightPanel h1{
+    padding-top: 1cm;
+}
+
+.rightPanel h3 {
+    border-bottom: #ddd dashed 2px;
+    width: 8.3cm;
+}
+
+.rightPanel ul {
+    display: flex;
+    flex-direction:column;
+    list-style-type: none;
+    padding: 0cm 0cm 1cm 0cm;
+}
+
+.rightPanel li {
+    padding: 0.5cm 0 0 0.5cm;
+    width: 12cm
+}
+
+.workExperience {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.smalltext {
+    text-align: justify;
+    font-size: 0.45cm;
+}
+
+.text {
+    width: 13cm;
+}
+.text p {
+    width: 12cm;
+}
+
+.achievements {
+    font-size: 13px;
+    margin: 0;
+}
+
+.achievements {
+    margin: 0;
+}
+
+.achievements li {
+    padding: 0.1cm;
+    width: 10cm;
+}
+
+.border li:not(:first-child) {
+    border-left: #777 3px solid;
+    margin-bottom: 0.1cm;
+}
+
+/* === General ===*/
+.highlight {
+    font-weight: bold;
+}
+
+.separator-white {
+    border-bottom: 0.01cm solid white;
+}
+
+.separator-black {
+    border-bottom: #777 solid 0.04cm;
+}
+
+.wrapper-box {
+    text-decoration: none;
+    display: flex;
+    flex-direction: col;
+    width: 100%;
+}
+
+.aligned-left {
+    text-align: left !important;
+    width: 50%;
+}
+
+.aligned-right {
+    text-align: right !important;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-right {
+    justify-content: right;
+}
+
+.smallText, 
+.smallText span, 
+.smallText p, 
+.smallText a {
+    font-size: small;
+  text-align: justify;
+}
+
+.mini-padding {
+    padding-bottom: 0.05cm;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.small-margin-bot {
+    margin-bottom: 0.1cm;
+    margin-top: 0.1cm;
+}
+.contact-details {
+    font-family: 'Courier New', Courier, monospace !important;
+}
